@@ -1,0 +1,24 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Resgistro Persona</h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label>ID: </label>
+            <input type="number" class="form-control" id="idPersona" [(ngModel)] = "persona.idPersona" name="idPersona">
+        </div>
+        <div class="form-group">
+            <label>Nombre: </label>
+            <input type="text" class="form-control" id="namePersona" [(ngModel)] = "persona.namePersona" name="namePersona">
+        </div>
+        <div class="form-group">
+            <label>Correo: </label>
+            <input type="email" class="form-control" id="correoPersona" [(ngModel)] = "persona.correoPersona" name="correoPersona">
+        </div>
+        <div class="form-group">
+            <label>Edad: </label>
+            <input type="number" class="form-control" id="edad" [(ngModel)] = "persona.edad" name="edad">
+        </div>
+
+        <button class="btn btn-success">Guardar</button>
+    </form>
+
+</div>
